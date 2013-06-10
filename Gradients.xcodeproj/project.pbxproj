@@ -18,6 +18,9 @@
 		D36DB6251765477B00B44C32 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D36DB6241765477B00B44C32 /* Default-568h@2x.png */; };
 		D36DB6281765477B00B44C32 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D36DB6261765477B00B44C32 /* MainStoryboard.storyboard */; };
 		D36DB62B1765477B00B44C32 /* NVViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D36DB62A1765477B00B44C32 /* NVViewController.m */; };
+		D36DB633176547BA00B44C32 /* NVGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = D36DB632176547BA00B44C32 /* NVGradientView.m */; };
+		D36DB6351765482300B44C32 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D36DB6341765482300B44C32 /* QuartzCore.framework */; };
+		D36DB63817655CDA00B44C32 /* NVGlossyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D36DB63717655CD900B44C32 /* NVGlossyButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +40,11 @@
 		D36DB6271765477B00B44C32 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		D36DB6291765477B00B44C32 /* NVViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NVViewController.h; sourceTree = "<group>"; };
 		D36DB62A1765477B00B44C32 /* NVViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NVViewController.m; sourceTree = "<group>"; };
+		D36DB631176547BA00B44C32 /* NVGradientView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVGradientView.h; sourceTree = "<group>"; };
+		D36DB632176547BA00B44C32 /* NVGradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NVGradientView.m; sourceTree = "<group>"; };
+		D36DB6341765482300B44C32 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		D36DB63617655CD900B44C32 /* NVGlossyButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVGlossyButton.h; sourceTree = "<group>"; };
+		D36DB63717655CD900B44C32 /* NVGlossyButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NVGlossyButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D36DB6351765482300B44C32 /* QuartzCore.framework in Frameworks */,
 				D36DB60F1765477B00B44C32 /* UIKit.framework in Frameworks */,
 				D36DB6111765477B00B44C32 /* Foundation.framework in Frameworks */,
 				D36DB6131765477B00B44C32 /* CoreGraphics.framework in Frameworks */,
@@ -73,6 +82,7 @@
 		D36DB60D1765477B00B44C32 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D36DB6341765482300B44C32 /* QuartzCore.framework */,
 				D36DB60E1765477B00B44C32 /* UIKit.framework */,
 				D36DB6101765477B00B44C32 /* Foundation.framework */,
 				D36DB6121765477B00B44C32 /* CoreGraphics.framework */,
@@ -89,6 +99,10 @@
 				D36DB6291765477B00B44C32 /* NVViewController.h */,
 				D36DB62A1765477B00B44C32 /* NVViewController.m */,
 				D36DB6151765477B00B44C32 /* Supporting Files */,
+				D36DB631176547BA00B44C32 /* NVGradientView.h */,
+				D36DB632176547BA00B44C32 /* NVGradientView.m */,
+				D36DB63617655CD900B44C32 /* NVGlossyButton.h */,
+				D36DB63717655CD900B44C32 /* NVGlossyButton.m */,
 			);
 			path = Gradients;
 			sourceTree = "<group>";
@@ -177,6 +191,8 @@
 				D36DB61B1765477B00B44C32 /* main.m in Sources */,
 				D36DB61F1765477B00B44C32 /* NVAppDelegate.m in Sources */,
 				D36DB62B1765477B00B44C32 /* NVViewController.m in Sources */,
+				D36DB633176547BA00B44C32 /* NVGradientView.m in Sources */,
+				D36DB63817655CDA00B44C32 /* NVGlossyButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

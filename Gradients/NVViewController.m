@@ -7,9 +7,10 @@
 //
 
 #import "NVViewController.h"
+#import "NVGradientView.h"
 
 @interface NVViewController ()
-
+@property NVGradientView *backgroundView;
 @end
 
 @implementation NVViewController
@@ -17,13 +18,31 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	_backgroundView = [[NVGradientView alloc] initWithFrame:self.view.bounds];
+    _backgroundView.backgroundColor = self.view.backgroundColor;
+    [self.view insertSubview:_backgroundView atIndex:0];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)setVertical:(id)sender
+{
+    [self.backgroundView setVertical];
+}
+
+- (IBAction)setHorizontal:(id)sender
+{
+    [self.backgroundView setHorizontal];
+}
+
+- (IBAction)setColor:(id)sender
+{
+    UIButton *button = (UIButton *) sender;
+    [self.backgroundView setBackgroundColor:button.backgroundColor];
 }
 
 @end
